@@ -1,0 +1,29 @@
+{
+    "extends": [
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/recommended",
+      "airbnb-typescript"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": "tsconfig.json",
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "plugins": ["import"],
+    "env": {
+        "jest": true,
+        "browser": true
+    },
+    "rules": {
+        "no-underscore-dangle": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+        "array-bracket-newline": [
+            "error",
+            "consistent"
+        ]
+    }
+  }
